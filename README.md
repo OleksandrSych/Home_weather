@@ -1,98 +1,75 @@
-Welcome to the AWS CodeStar sample web application
-==================================================
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+</p>
 
-This sample code helps get you started with a simple Node.js web application
-deployed by AWS CodeDeploy and AWS CloudFormation to an Amazon EC2 instance.
+[travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
+[travis-url]: https://travis-ci.org/nestjs/nest
+[linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
+[linux-url]: https://travis-ci.org/nestjs/nest
+  
+  <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/dm/@nestjs/core.svg" alt="NPM Downloads" /></a>
+<a href="https://travis-ci.org/nestjs/nest"><img src="https://api.travis-ci.org/nestjs/nest.svg?branch=master" alt="Travis" /></a>
+<a href="https://travis-ci.org/nestjs/nest"><img src="https://img.shields.io/travis/nestjs/nest/master.svg?label=linux" alt="Linux" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#5" alt="Coverage" /></a>
+<a href="https://gitter.im/nestjs/nestjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge"><img src="https://badges.gitter.im/nestjs/nestjs.svg" alt="Gitter" /></a>
+<a href="https://opencollective.com/nest#backer"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
+  <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-What's Here
------------
+## Description
 
-This sample includes:
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-* README.md - this file
-* app.js - this file contains the code for your application
-* appspec.yml - this file is used by AWS CodeDeploy when deploying the web
-  application to EC2
-* package.json - this file contains various metadata relevant to your Node.js
-  application such as dependencies
-* public/ - this directory contains static web assets used by your application
-* scripts/ - this directory contains scripts used by AWS CodeDeploy when
-  installing and deploying your application on the Amazon EC2 instance
-* tests/ - this directory contains unit tests for your application
-* template.yml - this file contains the description of AWS resources used by AWS
-  CloudFormation to deploy your infrastructure
-* template-configuration.json - this file contains the project ARN with placeholders used for tagging resources with the project ID
+## Installation
 
-Getting Started
----------------
+```bash
+$ npm install
+```
 
-These directions assume you want to develop on your local computer, and not
-from the Amazon EC2 instance itself. If you're on the Amazon EC2 instance, the
-virtual environment is already set up for you, and you can start working on the
-code.
+## Running the app
 
-To work on the sample code, you'll need to clone your project's repository to your
-local computer. If you haven't, do that first. You can find instructions in the AWS CodeStar user guide at https://docs.aws.amazon.com/codestar/latest/userguide/getting-started.html#clone-repo.
+```bash
+# development
+$ npm run start
 
-1. Install Node.js on your computer. For details on available installers visit
-   https://nodejs.org/en/download/.
+# watch mode
+$ npm run start:dev
 
-2. Install NPM dependencies:
+# production mode
+$ npm run start:prod
+```
 
-        $ npm install
+## Test
 
-2. Start the development server:
+```bash
+# unit tests
+$ npm run test
 
-        $ npm start
+# e2e tests
+$ npm run test:e2e
 
-3. Open http://127.0.0.1:3000/ in a web browser to view your application.
+# test coverage
+$ npm run test:cov
+```
 
-What Do I Do Next?
-------------------
+## Support
 
-Once you have a virtual environment running, you can start making changes to
-the sample Node.js web application. We suggest making a small change to
-/public/index.html first, so you can see how changes pushed to your project's
-repository are automatically picked up by your project pipeline and deployed to
-the Amazon EC2 instance. (You can watch the progress on your project dashboard.)
-Once you've seen how that works, start developing your own code, and have fun!
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-To run your tests locally, go to the root directory of the
-sample code and run the `npm test` command, which
-AWS CodeBuild also runs through your `buildspec.yml` file.
+## Stay in touch
 
-To test your new code during the release process, modify the existing tests or
-add tests to the tests directory. AWS CodeBuild will run the tests during the
-build stage of your project pipeline. You can find the test results
-in the AWS CodeBuild console.
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-Learn more about AWS CodeBuild and how it builds and tests your application here:
-https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html
+## License
 
-Learn more about AWS CodeStar by reading the user guide.  Ask questions or make
-suggestions on our forum.
-
-User Guide: https://docs.aws.amazon.com/codestar/latest/userguide/welcome.html
-
-Forum: https://forums.aws.amazon.com/forum.jspa?forumID=248
-
-How Do I Add Template Resources to My Project?
-------------------
-
-To add AWS resources to your project, you'll need to edit the `template.yml`
-file in your project's repository. You may also need to modify permissions for
-your project's worker roles. After you push the template change, AWS CodeStar
-and AWS CloudFormation provision the resources for you.
-
-See the AWS CodeStar user guide for instructions to modify your template:
-https://docs.aws.amazon.com/codestar/latest/userguide/how-to-change-project.html#customize-project-template
-
-What Should I Do Before Running My Project in Production?
-------------------
-
-AWS recommends you review the security best practices recommended by the framework
-author of your selected sample application before running it in production. You
-should also regularly review and apply any available patches or associated security
-advisories for dependencies used within your application.
-
-Best Practices: https://docs.aws.amazon.com/codestar/latest/userguide/best-practices.html?icmpid=docs_acs_rm_sec
+  Nest is [MIT licensed](LICENSE).

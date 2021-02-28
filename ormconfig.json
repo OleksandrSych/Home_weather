@@ -1,0 +1,21 @@
+{
+  "type": "postgres",
+  "host": "myhomedb.ceckcwkqk68x.eu-central-1.rds.amazonaws.com",
+  "port": 5432,
+  "username": "postgres",
+  "password": "mypassword",
+  "database": "HomeBase",
+  "entities": [
+    "/home/alex/my-home-weather/src/config/../**/*.entity.{ts,js}"
+  ],
+  "migrationsTableName": "migrations",
+  "migrations": [
+    "/home/alex/my-home-weather/src/config/../migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "/home/alex/my-home-weather/src/config/../migrations"
+  },
+  "synchronize": true,
+  "logging": false,
+  "ssl": false
+}
